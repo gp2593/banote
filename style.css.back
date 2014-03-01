@@ -1,0 +1,313 @@
+/*
+Theme Name: BaNote
+Theme URI: http://passer-byb.com
+Description: BaNote, combination of bash and sticky note, is a WordPress theme created for my blog (passer-byb.com), with simple design and interesting customization. The design is to imitate the look of sticky notes stick or nailed on a white board as the name shows. The customizable header can work like a bash session.
+Author: passer-byb
+Version: 0.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: white, light, gray, two-column, left-sidebar, fixed-width, custom-header, custom-menu
+*/
+
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1;
+}
+body.custom-font-enabled {
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+
+a {
+	text-decoration:none;
+	color:#2299cc;
+}
+
+a:hover {
+	color:#d90900;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+caption,
+th,
+td {
+	font-weight: normal;
+	text-align: left;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	clear: both;
+}
+html {
+	overflow-y: scroll;
+	font-size: 100%;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+	display: block;
+}
+audio,
+canvas,
+video {
+	display: inline-block;
+}
+audio:not([controls]) {
+	display: none;
+}
+del {
+	color: #333;
+}
+ins {
+	background: #fff9c0;
+	text-decoration: none;
+}
+hr {
+	background-color: #ccc;
+	border: 0;
+	height: 1px;
+	margin: 24px;
+	margin-bottom: 1.714285714rem;
+}
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+sup {
+	top: -0.5em;
+}
+sub {
+	bottom: -0.25em;
+}
+small {
+	font-size: smaller;
+}
+img {
+	border: 0;
+	-ms-interpolation-mode: bicubic;
+}
+button,
+input,
+textarea {
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	font-family: inherit;
+	font-size: 1.1em;
+	padding: 0.5em 0.4em;
+	color: #3d3d3d;
+}
+
+button,
+input[ type = "submit" ],
+input[ type = "button" ],
+input[ type = "reset"  ] {
+	color: #5e5e5e;
+	box-shadow: 0 1px 2px #ccc;
+	background-color: #e6e6e6;
+	background-repeat: repeat-x;
+	background-image: -moz-linear-gradient(top, #f4f4f4, #e6e6e6);
+	background-image: -ms-linear-gradient(top, #f4f4f4, #e6e6e6);
+	background-image: -webkit-linear-gradient(top, #f4f4f4, #e6e6e6);
+	background-image: -o-linear-gradient(top, #f4f4f4, #e6e6e6);
+	background-image: linear-gradient(top, #f4f4f4, #e6e6e6);
+}
+
+button:hover,
+input[ type = "submit" ]:hover,
+input[ type = "button" ]:hover,
+input[ type = "reset"  ]:hover {
+	color: #3d3d3d;
+	background-color: #ebebeb;
+	background-repeat: repeat-x;
+	background-image: -moz-linear-gradient(top, #f9f9f9, #ebebeb);
+	background-image: -ms-linear-gradient(top, #f9f9f9, #ebebeb);
+	background-image: -webkit-linear-gradient(top, #f9f9f9, #ebebeb);
+	background-image: -o-linear-gradient(top, #f9f9f9, #ebebeb);
+	background-image: linear-gradient(top, #f9f9f9, #ebebeb);
+}
+button:active,
+input[type="submit"]:active,
+input[type="button"]:active,
+input[type="reset"]:active {
+	color: #757575;
+	background-color: #e1e1e1;
+	background-repeat: repeat-x;
+	background-image: -moz-linear-gradient(top, #ebebeb, #e1e1e1);
+	background-image: -ms-linear-gradient(top, #ebebeb, #e1e1e1);
+	background-image: -webkit-linear-gradient(top, #ebebeb, #e1e1e1);
+	background-image: -o-linear-gradient(top, #ebebeb, #e1e1e1);
+	background-image: linear-gradient(top, #ebebeb, #e1e1e1);
+	box-shadow: inset 0 0 8px 2px #c6c6c6, 0 1px 0 0 #f4f4f4;
+	border: 1 solid transparent;
+
+}
+
+#super-header
+{
+	background-color: #3d3d3d;
+	color: #ffffff;
+}
+#bash
+{
+	width: 980px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#main
+{
+	clear: both;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	width: 980px;
+}
+#content
+{
+	position: relative;
+	float: left;
+	width: 730px;
+}
+#sidebar
+{
+	position: relative;
+	float: left;
+	width: 230px;
+	margin-left: 20px;
+	font-size: 14px;
+}
+
+#sidebar a {
+	text-decoration: underline;
+	color: #333;
+}
+
+#sidebar a:hover {
+	color:#d90900;
+}
+.content-note
+{
+	background-color: #fff;
+	-moz-box-shadow:    2px 2px 7px #aaa;
+	-webkit-box-shadow: 2px 2px 7px #aaa;
+	box-shadow:         2px 2px 7px #aaa;
+	margin-top: 10px;
+}
+
+.widget {
+	background-color: #fff8dc;
+	-moz-box-shadow:    2px 2px 7px #aaa;
+	-webkit-box-shadow: 2px 2px 7px #aaa;
+	box-shadow:         2px 3px 7px #aaa;
+	margin-bottom: 30px;
+	margin-top: 10px;
+	padding-left:  20px;
+	padding-right: 20px;
+	padding-bottom: 10px;
+	line-height: 2;
+}
+
+.color-0 {
+	background-color: #fff8dc;
+}
+
+.color-1 {
+	background-color: #add8e6;
+}
+
+.color-2 {
+	background-color: #f0fff0;
+}
+
+.color-3 {
+	background-color: #ffe4e1;
+}
+
+.dummy {
+	clear: both;
+}
+
+
+.pin
+{
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: -30px;
+	top: -18px;
+	background: url("/shutter.png") no-repeat;
+	background-size: 60px 60px;
+	background-color: transparent;
+	height: 60px;
+	width: 60px;
+}
+
+
+.widget label {
+	display: block;
+	font-size: 1.17em;
+	-webkit-margin-before: 1em;
+	-webkit-margin-after: 1em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+}
+
+.widget h1,
+.widget h2,
+.widget h3,
+.widget h4,
+.widget h5,
+.widget h6 {
+	color: #2299cc;
+}
+
+.widget h3 {
+	margin-bottom: 7px;
+	margin-bottom: 0.5rem;
+}
+
+.screen-reader-text {
+	position: absolute !important;
+	clip: rect(1px, 1px, 1px, 1px);
+}
