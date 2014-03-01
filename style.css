@@ -515,7 +515,7 @@ a:hover {
 
 body {
 	/*background-image:url("image/handmadepaper.png");*/
-	background-image:url("image/old_mathematics.png");
+	background-image:url("image/ticks.png");
 }
 
 #super-bg {
@@ -1300,7 +1300,7 @@ img#wpstats {
 	#super-header {
 		background-color: #363636;
 		color: #e6e6e6;
-        background-image: linear-gradient(to top,#000 0,#323232 8px);
+        background-image: linear-gradient(to top,#000 0,#313131 6px);
 	}
 	#super-header {
 		background-color: #000;
@@ -1404,7 +1404,7 @@ img#wpstats {
 		display: block;
 		float: left;
 		text-decoration: none;
-		margin: 5px 12px;
+		margin: 5px 18px;
 	}
 	#header-nav li a {
 		border-bottom: 0;
@@ -1416,21 +1416,20 @@ img#wpstats {
 	#header-nav .nav-menu > ul > li.current-menu-item,
 	#header-nav .nav-menu > ul > li:hover{
 		background-color: #333;
-		box-shadow: 0 0 15px 0 #111 inset;
+		box-shadow: 0 0 15px 0 #000 inset;
 		transition: all 0.1s ease-in;
 	}
     #header-nav .nav-menu > ul > li.current-menu-item > a {
-        color: #e6e6e6;
+        color: #fff;
     }
 	#header-nav .nav-menu > ul > li > a {
-		color: #cccccc;
+		color: #fff;
 		transition: all 0.1s ease-in;
 	}
 	#header-nav li a:hover {
 		color: #000;
 	}
 	#header-nav .nav-menu > ul > li > a:hover {
-		color: #ffffff;
 		text-shadow: 0 0 5px #000;
 	}
 	#header-nav li {
