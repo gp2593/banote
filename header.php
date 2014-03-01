@@ -18,7 +18,9 @@
 	</div>
 	<nav id="header-nav" role="navigation">
 		<h3 class="menu-toggle"><?php _e( 'Menu', 'banote'); ?></h3>
+		<div class="header-logo"><img src="<?php echo get_bloginfo('template_url') . "/image/header-logo.png"; ?>" /></div>
         <?php wp_nav_menu( array('theme_location' => 'primary', 'container_class' => 'nav-menu' ) ); ?>
+		<div class="header-edge"></div>
 		<div id="header-cse"><script>
 		  (function() {
 		    var cx = 'partner-pub-1030940667925294:9854282425';
