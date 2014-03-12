@@ -1360,7 +1360,10 @@ img#wpstats {
 		margin-right: auto;
 	}
 	body.full-width #main {
-		width: 100%
+		width: 1040px;
+	}
+	body.full-width #content {
+		width: 1040px;
 	}
 	#content {
 		float: left;
