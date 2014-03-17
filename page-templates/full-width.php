@@ -14,10 +14,7 @@ get_header(); ?>
 
 </div> <!-- #content -->
 
-<div id="sidebar">
-<?php
-get_sidebar(); ?>
-</div> <!-- #sidebar -->
+
 <div class="dummy"></div>
 <?php
 get_footer(); ?>

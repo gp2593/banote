@@ -805,7 +805,7 @@ div.content-full {
 .content-main article h2 {
 	display: inline;
 	font-size: 18px;
-	font-size: 1.2857142857143;
+	font-size: 1.2857142857143rem;
 }
 
 .content-main footer {

@@ -391,7 +391,7 @@ endif;
 function banote_body_class( $classes ) {
 	$background_color = get_background_color();
 
-	if ( ! is_active_sidebar( 'sidebar-1' ) || is_page_template( 'page-templates/full-width.php' ) )
+	if ( ! is_active_sidebar( 'sidebar-1' ) || is_page_template( 'page-templates/full-width.php' ) || is_page_template('page-templates/full-width-no-comment.php'))
 		$classes[] = 'full-width';
 
 	if ( is_page_template( 'page-templates/front-page.php' ) ) {
